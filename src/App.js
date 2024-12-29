@@ -1,24 +1,22 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
-
-
 import Header from './Components/Header'; 
 import Home from './Pag/Home';
+import Navigation from './Components/Navigation';
+import Flashsaless from './Components/Flashsaless';
+import Weds from './Components/Weds';
+
 function App() {
   return (
     <>
       <BrowserRouter>
-    
-        {/* Header or any other content */}
         <Header />
-        
-
-        {/* Routes for the application */}
         <Routes>
-          <Route path="/" exact={true} element={<Home />} />
-          {/* Add more routes as needed */}
+          <Route path="/" element={<Home />} />
+          <Route path="/navigation" element={<Navigation />} />
+          <Route path="/Flashsaless" element={<Flashsaless />} />
+          <Route path="/Weds" element={<Weds />} />
         </Routes>
       </BrowserRouter>
     </>
@@ -26,4 +24,3 @@ function App() {
 }
 
 export default App;
-

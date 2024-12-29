@@ -4,6 +4,7 @@ import pp1 from '../../assets/images/pp1.png';
 import { IoSearchOutline } from "react-icons/io5";
 import { Button } from '@mui/material';
 import { HiOutlineShoppingBag } from "react-icons/hi2";
+import Navigation from '../Navigation';
 
 const Header = () => {
     return (
@@ -69,6 +70,7 @@ const Header = () => {
                         </Button>
                     </div>
                 </div>
+                <Navigation/>
             </div>
         </>
     );
